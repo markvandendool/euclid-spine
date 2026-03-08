@@ -1,0 +1,52 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-03-05T04:17:08.671Z",
+  "soundfonts": {
+    "Game Boy": [
+      {
+        "filename": "generic-gb.sf2",
+        "path": "/vgm/GB/generic-gb.sf2",
+        "size": 4631874,
+        "console": "Game Boy"
+      }
+    ],
+    "GBA": [
+      {
+        "filename": "generic-gba.sf2",
+        "path": "/vgm/GBA/generic-gba.sf2",
+        "size": 4570072,
+        "console": "GBA"
+      }
+    ],
+    "Genesis": [
+      {
+        "filename": "generic-genesis.sf2",
+        "path": "/vgm/Genesis/generic-genesis.sf2",
+        "size": 45004006,
+        "console": "Genesis"
+      }
+    ],
+    "NES": [
+      {
+        "filename": "famicom-drums.sf2",
+        "path": "/vgm/NES/famicom-drums.sf2",
+        "size": 381480,
+        "console": "NES"
+      },
+      {
+        "filename": "generic-nes.sf2",
+        "path": "/vgm/NES/generic-nes.sf2",
+        "size": 90882,
+        "console": "NES"
+      }
+    ],
+    "PlayStation": [
+      {
+        "filename": "generic-psx.sf2",
+        "path": "/vgm/PSX/generic-psx.sf2",
+        "size": 94262774,
+        "console": "PlayStation"
+      }
+    ]
+  }
+}

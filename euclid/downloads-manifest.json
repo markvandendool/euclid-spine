@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "1.0.0",
+  "updatedAt": "2026-03-08T02:18:47.330Z",
+  "profile": "lean",
+  "lanes": [
+    {
+      "id": "macos_au",
+      "label": "Logic Pro",
+      "host": "Logic Pro",
+      "format": "AU",
+      "os": "macOS 11.0+",
+      "status": "beta",
+      "href": "#euclid-purchase",
+      "actionLabel": "Get Plugin - $19",
+      "blockedReason": ""
+    },
+    {
+      "id": "macos_vst3",
+      "label": "Ableton Live (macOS)",
+      "host": "Ableton Live",
+      "format": "VST3",
+      "os": "macOS 11.0+",
+      "status": "beta",
+      "href": "#euclid-purchase",
+      "actionLabel": "Get Plugin - $19",
+      "blockedReason": ""
+    },
+    {
+      "id": "windows_vst3",
+      "label": "Ableton Live (Windows)",
+      "host": "Ableton Live",
+      "format": "VST3",
+      "os": "Windows 10+",
+      "status": "coming_soon",
+      "href": "",
+      "actionLabel": "Coming Soon",
+      "blockedReason": "Requires Windows cross-compilation pipeline, Authenticode signing, and pluginval gate pass. Status changes only via signed gate evidence."
+    },
+    {
+      "id": "ios_pwa",
+      "label": "iPad (Free Web App)",
+      "host": "Safari",
+      "format": "PWA",
+      "os": "iPadOS 14.0+",
+      "status": "ready",
+      "href": "../metronome/",
+      "actionLabel": "Open Free Web App",
+      "blockedReason": ""
+    },
+    {
+      "id": "ios_native",
+      "label": "iPad (Native App)",
+      "host": "App Store / TestFlight",
+      "format": "Native",
+      "os": "iPadOS 14.0+",
+      "status": "blocked",
+      "href": "",
+      "actionLabel": "Blocked",
+      "blockedReason": "Requires Apple Developer Program enrollment ($99/year), code signing identity, and TestFlight approval. Status changes only via signed gate evidence."
+    }
+  ]
+}

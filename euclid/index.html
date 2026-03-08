@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <meta name="theme-color" content="#0d1117" />
+    <title>Euclid Downloads</title>
+    <style>
+      :root {
+        --bg: #0d1117;
+        --panel: #151b24;
+        --line: #2b3647;
+        --text: #e6edf3;
+        --muted: #95a4ba;
+        --ready: #1f6f4a;
+        --beta: #725520;
+        --blocked: #6e2230;
+        --soon: #204f77;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: radial-gradient(1000px 420px at 90% -10%, #28364f 0%, transparent 70%), var(--bg);
+        color: var(--text);
+      }
+      main {
+        width: min(1120px, 100%);
+        margin: 0 auto;
+        padding: 24px 16px 40px;
+      }
+      h1 {
+        margin: 0;
+        font-size: clamp(1.8rem, 5vw, 3rem);
+      }
+      .lead {
+        margin: 8px 0 18px;
+        color: var(--muted);
+        line-height: 1.5;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 12px;
+      }
+      .card {
+        background: color-mix(in oklab, var(--panel), black 6%);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 14px;
+      }
+      .card header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+      }
+      h2 {
+        margin: 0;
+        font-size: 1rem;
+      }
+      .pill {
+        font-size: 0.74rem;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        padding: 4px 8px;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+      }
+      .card.ready .pill { background: var(--ready); }
+      .card.beta .pill { background: var(--beta); }
+      .card.blocked .pill { background: var(--blocked); }
+      .card.soon .pill { background: var(--soon); }
+      .meta {
+        margin: 8px 0 6px;
+        color: var(--muted);
+        font-size: 0.88rem;
+      }
+      .reason {
+        margin: 0;
+        color: #ced6e1;
+        font-size: 0.92rem;
+        min-height: 2.5em;
+      }
+      .cta {
+        margin-top: 12px;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        border-radius: 10px;
+        border: 1px solid #3f4c65;
+        background: linear-gradient(120deg, #e8ba52, #df8f4c);
+        color: #101620;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 10px 12px;
+      }
+      .btn.ghost {
+        background: #1e2838;
+        color: var(--text);
+      }
+      .install {
+        margin-top: 18px;
+        background: color-mix(in oklab, var(--panel), black 8%);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 14px;
+      }
+      ol {
+        margin: 8px 0 0 18px;
+        color: #ced6e1;
+        line-height: 1.45;
+      }
+      code {
+        background: #101722;
+        border: 1px solid #2a3344;
+        border-radius: 6px;
+        padding: 2px 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Euclid Download Spine</h1>
+      <p class="lead">Minimal production surface. Only download lanes and the free iPad web app are shipped from this deployment target.</p>
+      <p class="lead">Build profile: <strong>lean</strong></p>
+      <section class="grid">
+        <article class="card beta">
+  <header>
+    <h2>Logic Pro</h2>
+    <span class="pill">Beta</span>
+  </header>
+  <p class="meta">Logic Pro / AU / macOS 11.0+</p>
+  <p class="reason">Lane is clear for install.</p>
+  <div class="cta"><a class="btn" href="#euclid-purchase">Get Plugin - $19</a></div>
+</article>
+<article class="card beta">
+  <header>
+    <h2>Ableton Live (macOS)</h2>
+    <span class="pill">Beta</span>
+  </header>
+  <p class="meta">Ableton Live / VST3 / macOS 11.0+</p>
+  <p class="reason">Lane is clear for install.</p>
+  <div class="cta"><a class="btn" href="#euclid-purchase">Get Plugin - $19</a></div>
+</article>
+<article class="card soon">
+  <header>
+    <h2>Ableton Live (Windows)</h2>
+    <span class="pill">Coming Soon</span>
+  </header>
+  <p class="meta">Ableton Live / VST3 / Windows 10+</p>
+  <p class="reason">Requires Windows cross-compilation pipeline, Authenticode signing, and pluginval gate pass. Status changes only via signed gate evidence.</p>
+  <div class="cta"><a class="btn ghost" href="mailto:support@millionsongmind.com?subject=Euclid%20Ableton%20Live%20(Windows)">Coming Soon</a></div>
+</article>
+<article class="card ready">
+  <header>
+    <h2>iPad (Free Web App)</h2>
+    <span class="pill">Ready</span>
+  </header>
+  <p class="meta">Safari / PWA / iPadOS 14.0+</p>
+  <p class="reason">Lane is clear for install.</p>
+  <div class="cta"><a class="btn" href="../metronome/">Open Free Web App</a></div>
+</article>
+<article class="card blocked">
+  <header>
+    <h2>iPad (Native App)</h2>
+    <span class="pill">Blocked</span>
+  </header>
+  <p class="meta">App Store / TestFlight / Native / iPadOS 14.0+</p>
+  <p class="reason">Requires Apple Developer Program enrollment ($99/year), code signing identity, and TestFlight approval. Status changes only via signed gate evidence.</p>
+  <div class="cta"><a class="btn ghost" href="mailto:support@millionsongmind.com?subject=Euclid%20iPad%20(Native%20App)">Blocked</a></div>
+</article>
+      </section>
+      <section class="install">
+        <h2>iPad Install (Free, No Account)</h2>
+        <ol>
+          <li>Open the <a href="../metronome/">Metronome Web App</a> in Safari on iPad.</li>
+          <li>Tap Share, then <strong>Add to Home Screen</strong>.</li>
+          <li>Launch from Home Screen for standalone mode.</li>
+        </ol>
+      </section>
+      <section id="euclid-purchase" class="install">
+        <h2>Plugin Purchase</h2>
+        <p class="lead">Mac AU/VST3 lanes are in beta. Use checkout to unlock the current beta package.</p>
+        <div class="cta"><a class="btn ghost" href="mailto:support@millionsongmind.com?subject=Euclid%20Plugin%20Purchase">Request Purchase Link</a></div>
+      </section>
+    </main>
+  </body>
+</html>
